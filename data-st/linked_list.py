@@ -4,11 +4,10 @@ class Node:
         self.next = None
 
 class LinkedList:
-
-    length = 0
     
     def __init__(self):
         self.head = None
+        self.length = 0
     
     def insert(self, value):
         if value == None:
@@ -140,9 +139,9 @@ class LinkedList:
                 return False
 
 
-    def get_number_of_nudes(self):
+    def get_length(self):
 
-        return f"The number of nudes is: {self.number_of_nudes}"
+        return f"The number of nudes is: {self.length}"
 
     def __str__(self) -> str:
         output = ' '
@@ -183,13 +182,13 @@ ll.appned('E')
 
 ll.__str__()
 # print(ll.includes('n'))
-print(ll.get_number_of_nudes())
+print(ll.length())
 ll.remove('A')
 ll.__str__()
-print(ll.get_number_of_nudes())
+print(ll.length())
 ll.remove('E')
 ll.__str__()
-print(ll.get_number_of_nudes())
+print(ll.length())
 ll.insert('A')
-print(ll.get_number_of_nudes())
+print(ll.length())
 ll.__str__()
